@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SDA Hello</title>
+</head>
+<body>
+    <form th:action="@{/login}" th:object="${loginForm}" method="post">
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" autofocus="autofocus">
+        <br/>
+        <label for="password">password</label>
+        <input type="text" id="password" name="password" autofocus="autofocus">
+        <br/>
+        <input type="submit" value="login">
+    </form>
+</body>
+</html>
